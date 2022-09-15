@@ -1,0 +1,61 @@
+.login {
+  background-color: rgb(162, 165, 165);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: rgba(46, 54, 57, 0.88);
+  color: #fff;
+  width: 45rem;
+  min-height: 35rem;
+  padding: 2rem 4rem;
+  border-radius: 3px;
+}
+
+.login-formConrol {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-form > h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.login-formConrol + .login-formConrol {
+  margin-top: 3rem;
+}
+.login-formConrol input,
+select {
+  display: block;
+  background-color: #eee;
+  font-size: 1.5rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.login-submitBtn {
+  background-color: rgb(56, 142, 170);
+  color: white;
+  display: block;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.login-info {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+.login-info a {
+  color: white;
+}
