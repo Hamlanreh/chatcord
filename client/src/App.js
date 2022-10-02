@@ -2,18 +2,16 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import Login from './components/Auth/Login';
-import Signup from './components/Auth/Signup';
-import Chat from './components/Chat/Chat';
+import Auth from './components/Auth';
+import ChatRoom from './components/ChatRoom';
 
 const App = () => {
   return (
     <div className="app">
       <Router>
         <Routes>
-          <Route index path="/" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/chat" element={<Chat />} />
+          <Route path="/" element={<Auth />} />
+          <Route path="/chatroom/:userId/:room" element={<ChatRoom />} />
         </Routes>
       </Router>
     </div>
